@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const CONNECTION_STRING = process.env.MONGODB_URI || 'mongodb+srv://admin:admin@clusterductrong.9p6xigl.mongodb.net/student-management?retryWrites=true&w=majority&appName=ClusterDucTrong'
+const CONNECTION_STRING = process.env.MONGODB_URI || 'mongodb://localhost:27017/restful-apis-with-expressjs-mongodb-redis'
 
 const connectMongo = () => {
     mongoose.connect(CONNECTION_STRING, {
